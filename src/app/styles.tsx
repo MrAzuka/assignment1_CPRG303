@@ -113,4 +113,13 @@ export const styles = StyleSheet.create({
     margin: GRID_GAP / 2,
     backgroundColor: "#eee",
   },
+  tabBar: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    paddingVertical: 12,
+    borderTopWidth: 0.5,
+    borderTopColor: "#dbdbdb",
+    backgroundColor: "#fff",
+  },
 });
