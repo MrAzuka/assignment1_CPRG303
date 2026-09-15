@@ -1,6 +1,8 @@
 import { Dimensions, StyleSheet } from "react-native";
 
 const { width, height } = Dimensions.get("window");
+const GRID_GAP = 2;
+const IMAGE_SIZE = (width - GRID_GAP * 2) / 3;
 
 export const styles = StyleSheet.create({
   container: {
@@ -99,5 +101,16 @@ export const styles = StyleSheet.create({
     color: "#0059b3",
     lineHeight: 19,
     alignItems: "center",
+  },
+
+  // Photo grid
+  gridContainer: {
+    paddingHorizontal: 0,
+  },
+  gridImage: {
+    width: IMAGE_SIZE,
+    height: IMAGE_SIZE,
+    margin: GRID_GAP / 2,
+    backgroundColor: "#eee",
   },
 });
