@@ -3,30 +3,38 @@ import { styles } from "./styles";
 
 export default function ProfileStats() {
   return (
-    <View style={styles.statsRow}>
-      <View style={styles.avatarRing}>
-        <View style={styles.avatarCircle}>
-          <Image
-            source={require("../../assets/images/profilepicture.jpeg")}
-            style={{ width: 72, height: 72, borderRadius: 36 }}
-          />
+    <View style={styles.profileBlock}>
+      <Image
+        source={require("../../assets/images/profilepicture.jpeg")}
+        style={styles.avatarPhoto}
+      />
+
+      <View style={styles.profileInfo}>
+        <View style={styles.usernameRow}>
+          <Text style={styles.username}>mrazu_ka</Text>
         </View>
-      </View>
 
-      <View style={styles.statsNumbers}>
-        <StatItem number={5} label="Posts" />
-        <StatItem number={749} label="Followers" />
-        <StatItem number={1403} label="Following" />
-      </View>
-    </View>
-  );
-}
+        <Text style={styles.fullName}>Azuka Olisemelie David</Text>
 
-function StatItem({ number, label }: { number: number; label: string }) {
-  return (
-    <View style={styles.statItem}>
-      <Text style={styles.statNumber}>{number}</Text>
-      <Text style={styles.statLabel}>{label}</Text>
+        <View style={styles.statsRow}>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>5</Text>
+            <Text style={styles.statLabel}> posts</Text>
+          </View>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>749</Text>
+            <Text style={styles.statLabel}> followers</Text>
+          </View>
+          <View style={styles.statItem}>
+            <Text style={styles.statNumber}>1,403</Text>
+            <Text style={styles.statLabel}> following</Text>
+          </View>
+        </View>
+
+        <Text style={styles.bioText}>
+          It takes at least a decade to become an overnight success 💪
+        </Text>
+      </View>
     </View>
   );
 }

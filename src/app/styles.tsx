@@ -36,53 +36,68 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  statsRow: {
+
+  // profile
+  profileBlock: {
     flexDirection: "row",
-    alignItems: "center",
-    paddingHorizontal: 20,
+    paddingHorizontal: 16,
     paddingVertical: 16,
+    alignItems: "center",
   },
-  avatarRing: {
+  avatarPhoto: {
     width: 84,
     height: 84,
     borderRadius: 42,
-    borderWidth: 2.5,
-    borderColor: "#e0338c",
-    alignItems: "center",
-    justifyContent: "center",
-    marginRight: 24,
+    backgroundColor: "#eee",
+    marginRight: 16,
   },
-  avatarCircle: {
-    width: 72,
-    height: 72,
-    borderRadius: 36,
-    backgroundColor: "#3fa9d6",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  avatarText: {
-    color: "#fff",
-    fontWeight: "700",
-    fontSize: 15,
-    textAlign: "center",
-    lineHeight: 18,
-  },
-  statsNumbers: {
+  profileInfo: {
     flex: 1,
+    justifyContent: "center",
+  },
+  usernameRow: {
     flexDirection: "row",
-    justifyContent: "space-around",
+    alignItems: "center",
+    marginBottom: 4,
+  },
+  username: {
+    fontSize: 20,
+    fontWeight: "700",
+    color: "#000",
+  },
+  verifiedBadge: {
+    marginLeft: 6,
+  },
+  fullName: {
+    fontSize: 14,
+    color: "#0059b3",
+    marginBottom: 8,
+  },
+
+  // Stats row
+  statsRow: {
+    flexDirection: "row",
+    marginBottom: 8,
+    alignItems: "center",
   },
   statItem: {
-    alignItems: "center",
+    flexDirection: "row",
+    alignItems: "baseline",
+    marginRight: 14,
   },
   statNumber: {
-    fontSize: 17,
+    fontSize: 14,
     fontWeight: "700",
     color: "#000",
   },
   statLabel: {
-    fontSize: 13,
+    fontSize: 14,
     color: "#000",
-    marginTop: 2,
+  },
+  bioText: {
+    fontSize: 14,
+    color: "#0059b3",
+    lineHeight: 19,
+    alignItems: "center",
   },
 });
