@@ -75,7 +75,33 @@ export const styles = StyleSheet.create({
     color: "#0059b3",
     marginBottom: 8,
   },
-
+  buttonsRow: {
+    flexDirection: "row",
+    paddingHorizontal: 16,
+    marginTop: 12,
+    marginBottom: 12,
+    gap: 8,
+  },
+  actionButton: {
+    flex: 1,
+    backgroundColor: "#262626",
+    borderRadius: 8,
+    paddingVertical: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  actionButtonText: {
+    color: "#fff",
+    fontWeight: "600",
+    fontSize: 14,
+  },
+  iconButton: {
+    width: 36,
+    backgroundColor: "#262626",
+    borderRadius: 8,
+    alignItems: "center",
+    justifyContent: "center",
+  },
   // Stats row
   statsRow: {
     flexDirection: "row",
@@ -100,7 +126,7 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     color: "#0059b3",
     lineHeight: 19,
-    alignItems: "center",
+    paddingHorizontal: 16,
   },
 
   // Photo grid
@@ -120,6 +146,23 @@ export const styles = StyleSheet.create({
     paddingVertical: 12,
     borderTopWidth: 0.5,
     borderTopColor: "#dbdbdb",
+    backgroundColor: "#fff",
+  },
+  tabsRow: {
+    flexDirection: "row",
+    borderTopWidth: 0.5,
+    borderTopColor: "#333",
+  },
+  tabItem: {
+    flex: 1,
+    alignItems: "center",
+    paddingVertical: 12,
+  },
+  tabIndicator: {
+    position: "absolute",
+    bottom: 0,
+    width: "60%",
+    height: 1.5,
     backgroundColor: "#fff",
   },
 });
