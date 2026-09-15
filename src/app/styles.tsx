@@ -36,4 +36,53 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  statsRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 20,
+    paddingVertical: 16,
+  },
+  avatarRing: {
+    width: 84,
+    height: 84,
+    borderRadius: 42,
+    borderWidth: 2.5,
+    borderColor: "#e0338c",
+    alignItems: "center",
+    justifyContent: "center",
+    marginRight: 24,
+  },
+  avatarCircle: {
+    width: 72,
+    height: 72,
+    borderRadius: 36,
+    backgroundColor: "#3fa9d6",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  avatarText: {
+    color: "#fff",
+    fontWeight: "700",
+    fontSize: 15,
+    textAlign: "center",
+    lineHeight: 18,
+  },
+  statsNumbers: {
+    flex: 1,
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+  statItem: {
+    alignItems: "center",
+  },
+  statNumber: {
+    fontSize: 17,
+    fontWeight: "700",
+    color: "#000",
+  },
+  statLabel: {
+    fontSize: 13,
+    color: "#000",
+    marginTop: 2,
+  },
 });
