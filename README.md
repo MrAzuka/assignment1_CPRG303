@@ -26,3 +26,11 @@ src/app/
 ├── photogrid.tsx              # 3-column post grid
 └── styles.tsx                  # Shared styles
 ```
+
+## Screenshot of Template
+
+![Alt text](assets/images/screenshots/instaprofilepage.jpeg)
+
+## Screenshot of Work Done
+
+![Alt text](assets/images/screenshots/instaprojwct.jpeg)
